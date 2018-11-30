@@ -4,8 +4,8 @@
    Tutorial 5
    Case Problem 1
    
-   Author:   
-   Date:     
+   Author:   Austin Inmon
+   Date:     11.30.18
    
    Filename: gp_print.css
 
@@ -17,23 +17,40 @@
 
 
 /* Hidden Objects */
-
-
+/* The style rule is for the nav with the class of horizontal and for the navigation, aside, and footer content is not to show up on the printed version of the web page.  */
+nav.horizontal,
+aside,
+footer {
+    display: none;
+}
 
 
 
 
 
 /* Comic Book Sheet Styles */
+/* The style is for the section with the id of sheet and the rule is to make the width 6inches and has margin of 0in for top/bottom and auto for left/right.  */
+section#sheet {
+    size: 6in;
+    margin: 0in auto;
+}
 
+/* This style rule is for the images that have a class of size 1 and the rule is to set the width of the images to a width of 5 inches.  */
+img.size1 {
+    width: 5in;
+}
 
+/* This style rule is for the images that have a class of size 2 and the rule is to set the width of the images to a width of 3 inches.  */
+img.size2 {
+    width: 3in;
+}
 
+/* This style rule is for the images that have a class of size 3 and the rule is to set the width of the images to a width of 2 inches.  */
+img.size3 {
+    width: 2in;
+}
 
-
-
-
-
-
-
-
-
+/* This style rule is for the images that have a class of size 4 and the rule is to set the width of the images to a width of 1.5 inches.  */
+img.size4 {
+    width: 1.5in;
+}

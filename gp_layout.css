@@ -22,6 +22,8 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+
+/* The rule is for the body and the rule makes the page into a flex box and has the browser extension webkit to support all kinds of different browsers. */
 body {
     display: -webkit-flex;
     display: flex;
@@ -30,11 +32,13 @@ body {
     flex-flow: row wrap;
 }
 
-section#sheets {
+/* The rule is for the section that an id of sheet and the rule is for the growth rate, shrink rate, and the basis for the section. 3 growth, 1 shrink rate, and 301pixels for the basis of the element.  */
+section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
 
+/* The rule is for the articl and the rule is for the growth rate, shrink rate, and the basis for the section. 1 growth, 3 shrink rate, and 180 pixels for the basis of the element. */
 article {
     -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
@@ -49,11 +53,13 @@ article {
 */
 @media only screen and (max-width: 480px) {
 
+    /* The rule is for the image that has a class of panel and the rule is to make any images thats is nested inside of the class panel to a width of 100%. */
     img.panel {
         flex-wrap: wrap;
         width: 100%;
     }
 
+    /* The rule is for the navigation and has a class of horizontal and the rule is for when the page is rendered on mobile the navigation bar is pushed to the bottom of the page and the -webkit-order is for the other browsers. .  */
     nav.horizontal {
 
         -webkit-order: 99;
@@ -61,6 +67,7 @@ article {
 
     }
 
+    /* The rule is for the footer that is nested inside of the body and the rule is to make the footer a flex order of 100. the -webkit-order is for the other browsers.  */
     body>footer {
         -webkit-order: 100;
         order: 100;
@@ -76,7 +83,10 @@ article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+/* The media query is for the tablet and desktop screens.  */
 @media only screen and (min-width: 481px) {
+
+    /* The rule is for the unorderlist that is nested inside of the navigation with class of horizontal and the rule makes the page into a flex box and has the browser extension webkit to support all kinds of different browsers.  */
     nav.horizontal ul {
         display: -webkit-flex;
         display: flex;
@@ -85,8 +95,29 @@ article {
         height: 40px;
     }
 
-    nav.horizotnal ul li {
-        -webkit-flex: 1 auto;
-        flex: 1 3 auto;
+    /* The rule is for the list items that is nested in the unoreder lsit that is inside of the navigation that has a class of horizontal and the rule sets the growth shrink and basis of 1 growth 1 shrink and auto for the basis of the navigation.  */
+    nav.horizontal ul li {
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+    /* The style rule is for the images that have a class of size1 and the rule is to make the width of the image to 100%. */
+    img.size1 {
+        width: 100%;
+    }
+
+    /* The style rule is for the images that have a class of size2 and the rule is to make the width of the image to 60%. */
+    img.size2 {
+        width: 60%;
+    }
+
+    /* The style rule is for the images that have a class of size3 and the rule is to make the width of the image to 40%. */
+    img.size3 {
+        width: 40%;
+    }
+
+    /* The style rule is for the images that have a class of size4 and the rule is to make the width of the image to 30%. */
+    img.size4 {
+        width: 30%;
     }
 }
